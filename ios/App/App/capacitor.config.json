@@ -1,0 +1,68 @@
+{
+	"appId": "com.taqcare.app",
+	"appName": "Taqcare",
+	"webDir": "dist",
+	"server": {
+		"androidScheme": "https",
+		"cleartext": true
+	},
+	"android": {
+		"allowMixedContent": true,
+		"captureInput": true,
+		"webContentsDebuggingEnabled": true,
+		"intentFilters": [
+			{
+				"action": "VIEW",
+				"autoVerify": true,
+				"category": [
+					"DEFAULT",
+					"BROWSABLE"
+				],
+				"data": [
+					{
+						"scheme": "https",
+						"host": "app.taqcare.com"
+					},
+					{
+						"scheme": "https",
+						"host": "jqqnscbbbrrzohnxhscg.lovable.dev"
+					}
+				]
+			}
+		]
+	},
+	"ios": {
+		"contentInset": "automatic",
+		"scrollEnabled": true,
+		"associatedDomains": [
+			"applinks:app.taqcare.com",
+			"applinks:jqqnscbbbrrzohnxhscg.lovable.dev"
+		]
+	},
+	"plugins": {
+		"LocalNotifications": {
+			"smallIcon": "ic_stat_icon_config_sample",
+			"iconColor": "#488AFF",
+			"sound": "beep.wav"
+		},
+		"Camera": {
+			"web": {
+				"showFilePicker": true
+			}
+		},
+		"PushNotifications": {
+			"presentationOptions": [
+				"badge",
+				"sound",
+				"alert"
+			]
+		}
+	},
+	"packageClassList": [
+		"AppPlugin",
+		"CAPCameraPlugin",
+		"FilesystemPlugin",
+		"LocalNotificationsPlugin",
+		"PushNotificationsPlugin"
+	]
+}
