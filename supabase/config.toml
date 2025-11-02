@@ -1,0 +1,10 @@
+
+project_id = "jqqnscbbbrrzohnxhscg"
+
+[auth]
+site_url = "https://jqqnscbbbrrzohnxhscg.lovable.dev"
+additional_redirect_urls = ["https://jqqnscbbbrrzohnxhscg.lovable.dev/reset-password"]
+enable_otp_verification = true
+
+[functions.support-chat]
+verify_jwt = false
